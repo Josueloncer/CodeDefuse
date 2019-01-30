@@ -409,8 +409,8 @@ GameObject:
   m_Component:
   - component: {fileID: 635477334}
   - component: {fileID: 635477337}
-  - component: {fileID: 635477336}
   - component: {fileID: 635477335}
+  - component: {fileID: 635477336}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -444,7 +444,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 635477333}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 779d397cc6073fe4a88697f90c0f7b80, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d484ea993ea84c76b2be4ad8ded9a19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   NumeroTap: {fileID: 244383385}

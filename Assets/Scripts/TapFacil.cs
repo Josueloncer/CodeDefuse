@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Tap : MonoBehaviour {
+public class TapFacil : MonoBehaviour {
 
     public Text NumeroTap;
     public int contador;
@@ -17,9 +17,9 @@ public class Tap : MonoBehaviour {
 
 
     bool numeroRandomBool = false;
-    bool numeroRandomBool2 = false;
-    bool numeroRandomBool3 = false;
-    bool numeroRandomBool4 = false;
+    //bool numeroRandomBool2 = false;
+    //bool numeroRandomBool3 = false;
+    //bool numeroRandomBool4 = false;
 
     bool ganaste = false;
 
@@ -42,6 +42,7 @@ public class Tap : MonoBehaviour {
         if(tiempo>2)
         {
             contador = 0;
+            tiempo = 0;
         }
     }
 
@@ -86,7 +87,7 @@ public class Tap : MonoBehaviour {
         {
             numeroRandomBool = true;
             Debug.Log(numeroRandomBool);
-            if (contador == numeroRandom2)
+            /*if (contador == numeroRandom2)
             {
                 numeroRandomBool2 = true;
                 if (contador == numeroRandom3)
@@ -99,6 +100,7 @@ public class Tap : MonoBehaviour {
                     }
                 }
             }
+            */
         }
     }
 
