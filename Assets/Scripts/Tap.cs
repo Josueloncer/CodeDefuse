@@ -10,9 +10,29 @@ public class Tap : MonoBehaviour {
     public float tiempo;
     public bool activar;
 
+    int numeroRandom;
+    int numeroRandom2;
+    int numeroRandom3;
+    int numeroRandom4;
+
+
+    bool numeroRandomBool = false;
+    bool numeroRandomBool2 = false;
+    bool numeroRandomBool3 = false;
+    bool numeroRandomBool4 = false;
+
+    bool ganaste = false;
+
     public void Start()
     {
+
+        numeroRandom = Random.Range(1, 6);
+        numeroRandom2 = Random.Range(1, 6);
+        numeroRandom3 = Random.Range(1, 6);
+        numeroRandom4 = Random.Range(1, 6);
         NumeroRandom();
+
+
     }
 
     public void Tiempo()
@@ -40,12 +60,45 @@ public class Tap : MonoBehaviour {
         }
     }
 
+
     public void NumeroRandom()
     {
-        for(int i=0; i<5; i++)
+        /*for(int i=0; i<5; i++)
         {
             int numeroRandom = Random.Range(1, 10);
             Debug.Log(numeroRandom);
+        }
+        */
+        Debug.Log(numeroRandom);
+        Debug.Log(numeroRandom2);
+        Debug.Log(numeroRandom3);
+        Debug.Log(numeroRandom4);
+
+        if(ganaste == true)
+        {
+            Debug.Log("Ganaste");
+        }
+    }
+
+    public void CondicionVictoria()
+    {
+        if (contador == numeroRandom)
+        {
+            numeroRandomBool = true;
+            Debug.Log(numeroRandomBool);
+            if (contador == numeroRandom2)
+            {
+                numeroRandomBool2 = true;
+                if (contador == numeroRandom3)
+                {
+                    numeroRandomBool3 = true;
+                    if (contador == numeroRandom4)
+                    {
+                        numeroRandomBool4 = true;
+                        ganaste = true;
+                    }
+                }
+            }
         }
     }
 
@@ -54,10 +107,10 @@ public class Tap : MonoBehaviour {
         NumeroTap.text = contador.ToString();
     }
 
-	// Update is called once per frame
 	void Update ()
     {
         TapContador();
         MostrarContador();
+        CondicionVictoria();
     }
 }
