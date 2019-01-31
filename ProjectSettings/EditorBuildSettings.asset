@@ -6,27 +6,4 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: "Assets/Victor L\xF3pez/Scenes/00Video_Intro.unity"
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
-    path: "Assets/Victor L\xF3pez/Scenes/01TapToContinue.unity"
-    guid: 5977b54fc38cfa945a7cfa546b1496f0
-  - enabled: 1
-    path: "Assets/Victor L\xF3pez/Scenes/02Menu.unity"
-    guid: 060be4abd4002c7418c5a41b79122925
-  - enabled: 1
-    path: "Assets/Victor L\xF3pez/Scenes/03Gameplay.unity"
-    guid: b653e8a50cb47dd4ea3aaabc844439bf
-  - enabled: 1
-    path: "Assets/Victor L\xF3pez/Scenes/05Credits.unity"
-    guid: 1fc9d1975c1a07d48b7b7b0e07afa449
-  - enabled: 1
-    path: "Assets/Victor L\xF3pez/Scenes/06HELP.unity"
-    guid: 79be4101c7ec60a4d965b2579d080757
-  - enabled: 1
-    path: "Assets/Victor L\xF3pez/Scenes/ONLINEPRUEBA/10MenuOnlineExample.unity"
-    guid: bcc5eb63db5ea0f48b1370c59a5289e3
-  - enabled: 1
-    path: "Assets/Victor L\xF3pez/Scenes/ONLINEPRUEBA/11OnlineGame.unity"
-    guid: 88fb9d0c0c37c8942ac9728b16e945df
   m_configObjects: {}

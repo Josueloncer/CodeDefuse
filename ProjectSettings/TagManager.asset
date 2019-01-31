@@ -3,11 +3,6 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Btns_Main
-  - Btns_Dificulty
-  - Btns_Multiplayer
-  - Btns_OnlineM
   layers:
   - Default
   - TransparentFX
