@@ -5,6 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-
+    path: Assets/Scenes/DificultadMultijugadorLocal.unity
+    guid: eb3f9b151da6d9342886348bd6616477
+  - enabled: 1
+    path: Assets/Scenes/MultiLocalFacil.unity
+    guid: efd79e5401829fc4b8e822707a0fffba
+  - enabled: 1
+    path: Assets/Scenes/MultiLocalNormal.unity
+    guid: 4b4b8e13647110540847d508a813e409
+  - enabled: 1
+    path: Assets/Scenes/MultiLocalDificil.unity
+    guid: f3b577e30801cc1419c3639e505bbe0f
+  - enabled: 1
+    path: Assets/Scenes/MultiLocalExperto.unity
+    guid: bc084e475857c964d92e173848fa30ac
   m_configObjects: {}
