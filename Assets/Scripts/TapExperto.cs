@@ -21,16 +21,22 @@ public class TapExperto : MonoBehaviour {
     int numeroRandom9;
     int numeroRandom10;
 
-    bool numeroRandomBool = false;
-    //bool numeroRandomBool2 = false;
-    //bool numeroRandomBool3 = false;
-    //bool numeroRandomBool4 = false;
+    public static bool numeroRandomBool1 = false;
+    public static bool numeroRandomBool2 = false;
+    public static bool numeroRandomBool3 = false;
+    public static bool numeroRandomBool4 = false;
+    public static bool numeroRandomBool5 = false;
+    public static bool numeroRandomBool6 = false;
+    public static bool numeroRandomBool7 = false;
+    public static bool numeroRandomBool8 = false;
+    public static bool numeroRandomBool9 = false;
+    public static bool numeroRandomBool10 = false;
 
     bool ganaste = false;
 
     public void Start()
     {
-
+        StartCoroutine(Contador());
         numeroRandom = Random.Range(1, 6);
         numeroRandom2 = Random.Range(1, 6);
         numeroRandom3 = Random.Range(1, 6);
@@ -46,15 +52,15 @@ public class TapExperto : MonoBehaviour {
 
     }
 
-    public void Tiempo()
+    IEnumerator Contador()
     {
-        tiempo += Time.deltaTime;
-
-        if (tiempo > 2)
+        while (true)
         {
+            TapContador();
+            yield return new WaitForSeconds(3);
             contador = 0;
-            tiempo = 0;
         }
+
     }
 
     public void TapContador()
@@ -62,24 +68,12 @@ public class TapExperto : MonoBehaviour {
         if (Input.GetMouseButtonDown(0))
         {
             contador = contador + 1;
-            activar = true;
-        }
-
-        if (activar == true)
-        {
-            Tiempo();
         }
     }
 
 
     public void NumeroRandom()
     {
-        /*for(int i=0; i<5; i++)
-        {
-            int numeroRandom = Random.Range(1, 10);
-            Debug.Log(numeroRandom);
-        }
-        */
         Debug.Log(numeroRandom);
         Debug.Log(numeroRandom2);
         Debug.Log(numeroRandom3);
@@ -91,32 +85,86 @@ public class TapExperto : MonoBehaviour {
         Debug.Log(numeroRandom9);
         Debug.Log(numeroRandom10);
 
-        if (ganaste == true)
-        {
-            Debug.Log("Ganaste");
-        }
     }
 
     public void CondicionVictoria()
     {
         if (contador == numeroRandom)
         {
-            numeroRandomBool = true;
-            Debug.Log(numeroRandomBool);
-            /*if (contador == numeroRandom2)
+            numeroRandomBool1 = true;
+            Debug.Log(numeroRandomBool1);
+        }
+
+        if (numeroRandomBool1 == true)
+        {
+            if (contador == numeroRandom2)
             {
                 numeroRandomBool2 = true;
-                if (contador == numeroRandom3)
-                {
-                    numeroRandomBool3 = true;
-                    if (contador == numeroRandom4)
-                    {
-                        numeroRandomBool4 = true;
-                        ganaste = true;
-                    }
-                }
             }
-            */
+        }
+
+        if (numeroRandomBool2 == true)
+        {
+            if (contador == numeroRandom3)
+            {
+                numeroRandomBool3 = true;
+            }
+        }
+
+        if (numeroRandomBool3 == true)
+        {
+            if (contador == numeroRandom4)
+            {
+                numeroRandomBool4 = true;
+            }
+        }
+
+        if (numeroRandomBool4 == true)
+        {
+            if (contador == numeroRandom5)
+            {
+                numeroRandomBool5 = true;
+            }
+        }
+
+        if (numeroRandomBool5 == true)
+        {
+            if (contador == numeroRandom6)
+            {
+                numeroRandomBool6 = true;
+            }
+        }
+
+        if (numeroRandomBool6 == true)
+        {
+            if (contador == numeroRandom7)
+            {
+                numeroRandomBool7 = true;
+            }
+        }
+
+        if (numeroRandomBool7 == true)
+        {
+            if (contador == numeroRandom8)
+            {
+                numeroRandomBool8 = true;
+            }
+        }
+
+        if (numeroRandomBool8 == true)
+        {
+            if (contador == numeroRandom9)
+            {
+                numeroRandomBool9 = true;
+            }
+        }
+
+        if (numeroRandomBool9 == true)
+        {
+            if (contador == numeroRandom10)
+            {
+                numeroRandomBool10 = true;
+            }
         }
     }
 
