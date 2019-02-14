@@ -3,8 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class Interface_Behaviours : MonoBehaviour {
 
-	public string _WhichScene, SINGLEdificultSceneSelection, MULTIdificultSceneSelection;
-	public GameObject[] Main_btns, Dificult_btns, Multiplayer_btns, OnlineM_btns;
+    public string _WhichScene, SINGLEdificultSceneSelection, MULTIdificultSceneSelection;
+
+    public GameObject[] Main_btns, Dificult_btns, Multiplayer_btns, OnlineM_btns;
 	public GameObject Back_btn;
 	public static bool _MainB = true, _Difi_SingPB = false, _Difi_MultPLB = false, _MultB = false, _OnliB = false;
 
@@ -16,18 +17,21 @@ public class Interface_Behaviours : MonoBehaviour {
 		SceneManager.LoadScene(_WhichScene, LoadSceneMode.Single);
 	}
 
-	public void DificultySelection(){
-		
-		if(_Difi_SingPB){
-				SceneManager.LoadScene(SINGLEdificultSceneSelection, LoadSceneMode.Single);
-			}
-			else if(_Difi_MultPLB){
-				SceneManager.LoadScene(MULTIdificultSceneSelection, LoadSceneMode.Single);
-			}
-	}
+    public void DificultySelection()
+    {
 
-	//Abre(Añade) encima la escena especificada en el string.
-	public void AddScene(){
+        if (_Difi_SingPB)
+        {
+            SceneManager.LoadScene(SINGLEdificultSceneSelection, LoadSceneMode.Single);
+        }
+        else if (_Difi_MultPLB)
+        {
+            SceneManager.LoadScene(MULTIdificultSceneSelection, LoadSceneMode.Single);
+        }
+    }
+
+    //Abre(Añade) encima la escena especificada en el string.
+    public void AddScene(){
 		SceneManager.LoadScene(_WhichScene, LoadSceneMode.Additive);
 	}
 
@@ -49,7 +53,6 @@ public class Interface_Behaviours : MonoBehaviour {
 
 	public void SinglePlayerOn(){
 		_Difi_SingPB = true;
-
 		if(Back_btn != null)Back_btn.SetActive(true);
 		Activate_Or_Deactivate_button(Main_btns, "Btns_Main", false);
 		Activate_Or_Deactivate_button(Dificult_btns, "Btns_Dificulty", true);
@@ -107,4 +110,25 @@ public class Interface_Behaviours : MonoBehaviour {
 			ActualButtons.SetActive(activateOrDeactivate);
 		}
 	}
+
+    /*public void easy()
+    {
+        Application.LoadLevel("Easy");
+    }
+
+
+    public void Normal()
+    {
+        Application.LoadLevel("Normal");
+    }
+
+    public void Hard()
+    {
+        Application.LoadLevel("Hard");
+    }
+
+    public void Xtreme()
+    {
+        Application.LoadLevel("X-Treme");
+    }*/
 }

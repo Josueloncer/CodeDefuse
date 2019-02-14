@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 68171170}
   - component: {fileID: 68171172}
   - component: {fileID: 68171171}
+  - component: {fileID: 68171173}
   m_Layer: 5
   m_Name: BotonRojo2
   m_TagString: Untagged
@@ -182,6 +183,19 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 68171169}
   m_CullTransparentMesh: 0
+--- !u!114 &68171173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 68171169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b5c91c0e8c1a643ae145865ed9a8d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite1: {fileID: 21300000, guid: 47d720f245989af4c9032cd67a886fe0, type: 3}
+  sprite2: {fileID: 21300000, guid: 4d68e0bda7dc40b43ad299f0476cb4e5, type: 3}
 --- !u!1 &68736490
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,6 +546,7 @@ GameObject:
   - component: {fileID: 475844867}
   - component: {fileID: 475844869}
   - component: {fileID: 475844868}
+  - component: {fileID: 475844870}
   m_Layer: 5
   m_Name: BotonRojo3
   m_TagString: Untagged
@@ -591,6 +606,19 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 475844866}
   m_CullTransparentMesh: 0
+--- !u!114 &475844870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 475844866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7931e78ecdca24f4dab0a0880201e88c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite1: {fileID: 21300000, guid: 47d720f245989af4c9032cd67a886fe0, type: 3}
+  sprite2: {fileID: 21300000, guid: 4d68e0bda7dc40b43ad299f0476cb4e5, type: 3}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,6 +706,7 @@ GameObject:
   - component: {fileID: 889367576}
   - component: {fileID: 889367578}
   - component: {fileID: 889367577}
+  - component: {fileID: 889367579}
   m_Layer: 5
   m_Name: BotonRojo1
   m_TagString: Untagged
@@ -737,6 +766,19 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 889367575}
   m_CullTransparentMesh: 0
+--- !u!114 &889367579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 889367575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0d3607bd0011a742ad29486214f650e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite1: {fileID: 21300000, guid: 47d720f245989af4c9032cd67a886fe0, type: 3}
+  sprite2: {fileID: 21300000, guid: 4d68e0bda7dc40b43ad299f0476cb4e5, type: 3}
 --- !u!1 &899383099
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,6 +828,7 @@ GameObject:
   - component: {fileID: 901863552}
   - component: {fileID: 901863554}
   - component: {fileID: 901863553}
+  - component: {fileID: 901863555}
   m_Layer: 5
   m_Name: BotonRojo4
   m_TagString: Untagged
@@ -845,6 +888,19 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 901863551}
   m_CullTransparentMesh: 0
+--- !u!114 &901863555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 901863551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8493a58c8ea4f5440a47ade4b8451e09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite1: {fileID: 21300000, guid: 47d720f245989af4c9032cd67a886fe0, type: 3}
+  sprite2: {fileID: 21300000, guid: 4d68e0bda7dc40b43ad299f0476cb4e5, type: 3}
 --- !u!1 &972084942
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,6 +911,7 @@ GameObject:
   - component: {fileID: 972084943}
   - component: {fileID: 972084945}
   - component: {fileID: 972084944}
+  - component: {fileID: 972084946}
   m_Layer: 5
   m_Name: BotonRojo2
   m_TagString: Untagged
@@ -914,6 +971,19 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 972084942}
   m_CullTransparentMesh: 0
+--- !u!114 &972084946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 972084942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b5c91c0e8c1a643ae145865ed9a8d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite1: {fileID: 21300000, guid: 47d720f245989af4c9032cd67a886fe0, type: 3}
+  sprite2: {fileID: 21300000, guid: 4d68e0bda7dc40b43ad299f0476cb4e5, type: 3}
 --- !u!1 &1041079973
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,9 +1012,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bec6895a3d707174f9ef7ff7deb9a5dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TiempoDeJeugo: 8.05
-  Win: {fileID: 8300000, guid: 55b48dc3c07e41d4b9546e430a68f96c, type: 3}
-  Loose: {fileID: 8300000, guid: fdb3ed2ea096e7c48b37ecfba55a8ff2, type: 3}
 --- !u!4 &1041079975
 Transform:
   m_ObjectHideFlags: 0
@@ -1063,6 +1130,7 @@ GameObject:
   - component: {fileID: 1247791979}
   - component: {fileID: 1247791981}
   - component: {fileID: 1247791980}
+  - component: {fileID: 1247791982}
   m_Layer: 5
   m_Name: BotonRojo4
   m_TagString: Untagged
@@ -1122,6 +1190,19 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1247791978}
   m_CullTransparentMesh: 0
+--- !u!114 &1247791982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1247791978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8493a58c8ea4f5440a47ade4b8451e09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite1: {fileID: 21300000, guid: 47d720f245989af4c9032cd67a886fe0, type: 3}
+  sprite2: {fileID: 21300000, guid: 4d68e0bda7dc40b43ad299f0476cb4e5, type: 3}
 --- !u!1 &1279315263
 GameObject:
   m_ObjectHideFlags: 0
@@ -1227,6 +1308,7 @@ GameObject:
   - component: {fileID: 1316171878}
   - component: {fileID: 1316171880}
   - component: {fileID: 1316171879}
+  - component: {fileID: 1316171881}
   m_Layer: 5
   m_Name: BotonRojo3
   m_TagString: Untagged
@@ -1286,6 +1368,19 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1316171877}
   m_CullTransparentMesh: 0
+--- !u!114 &1316171881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1316171877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7931e78ecdca24f4dab0a0880201e88c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite1: {fileID: 21300000, guid: 47d720f245989af4c9032cd67a886fe0, type: 3}
+  sprite2: {fileID: 21300000, guid: 4d68e0bda7dc40b43ad299f0476cb4e5, type: 3}
 --- !u!1 &1328898846
 GameObject:
   m_ObjectHideFlags: 0
@@ -1458,6 +1553,7 @@ GameObject:
   - component: {fileID: 2072372128}
   - component: {fileID: 2072372130}
   - component: {fileID: 2072372129}
+  - component: {fileID: 2072372131}
   m_Layer: 5
   m_Name: BotonRojo1
   m_TagString: Untagged
@@ -1517,3 +1613,16 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2072372127}
   m_CullTransparentMesh: 0
+--- !u!114 &2072372131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2072372127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0d3607bd0011a742ad29486214f650e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite1: {fileID: 21300000, guid: 47d720f245989af4c9032cd67a886fe0, type: 3}
+  sprite2: {fileID: 21300000, guid: 4d68e0bda7dc40b43ad299f0476cb4e5, type: 3}

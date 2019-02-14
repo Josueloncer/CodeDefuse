@@ -5,6 +5,7 @@ using UnityEngine;
 public class Dificil_Boton5 : MonoBehaviour {
 
     public Sprite sprite1;
+    public Sprite sprite2;
 
     // Use this for initialization
     void Start()
@@ -22,6 +23,10 @@ public class Dificil_Boton5 : MonoBehaviour {
         if (TapDificil.numeroRandomBool5 == true)
         {
             this.GetComponent<SpriteRenderer>().sprite = sprite1;
+        }
+        else
+        {
+            this.GetComponent<SpriteRenderer>().sprite = sprite2;
         }
     }
 }
