@@ -3,21 +3,105 @@ using UnityEngine.TestTools;
 using NUnit.Framework;
 using System.Collections;
 
-public class UT {
+public class UT
+{
+
+    bool numeroRandombool = false;
+    bool numeroRandombool2 = false;
+    bool numeroRandombool3 = false;
+    bool numeroRandombool4 = false;
 
     [Test]
-    public void UTSimplePasses()
+    public void CondicionVictoria1Facil()
     {
+        int contador = 0;
+        int numeroAleatorio = 0;
 
-        // Use the Assert class to test conditions.
+        contador = 3;
+        numeroAleatorio = 3;
+
+        if (contador == numeroAleatorio)
+        {
+            numeroRandombool = true;
+        }
+
+        Assert.IsTrue(numeroRandombool);
     }
 
-    // A UnityTest behaves like a coroutine in PlayMode
-    // and allows you to yield null to skip a frame in EditMode
-    [UnityTest]
-    public IEnumerator UTWithEnumeratorPasses() {
-        // Use the Assert class to test conditions.
-        // yield to skip a frame
-        yield return null;
+    [Test]
+    public void CondicionVictoria2Facil()
+    {
+        int contador = 0;
+        int numeroAleatorio = 0;
+
+        contador = 3;
+        numeroAleatorio = 3;
+
+        if (numeroRandombool == true)
+        {
+            if (contador == numeroAleatorio)
+            {
+                numeroRandombool2 = true;
+            }
+        }
+
+        Assert.IsTrue(numeroRandombool2);
     }
+
+    [Test]
+    public void CondicionVictoria3Facil()
+    {
+        int contador = 0;
+        int numeroAleatorio = 0;
+
+        contador = 3;
+        numeroAleatorio = 3;
+
+        if (numeroRandombool2 == true)
+        {
+            if (contador == numeroAleatorio)
+            {
+                numeroRandombool3 = true;
+            }
+        }
+
+        Assert.IsTrue(numeroRandombool3);
+    }
+
+    [Test]
+    public void CondicionVictoria4Facil()
+    {
+        int contador = 0;
+        int numeroAleatorio = 0;
+
+        contador = 3;
+        numeroAleatorio = 3;
+
+        if (numeroRandombool3 == true)
+        {
+            if (contador == numeroAleatorio)
+            {
+                numeroRandombool4 = true;
+            }
+        }
+
+        Assert.IsTrue(numeroRandombool4);
+    }
+
+    [Test]
+    public void VerificarGanaste()
+    {
+        bool ganasteTexto = false;
+
+        if(numeroRandombool4 == true)
+        {
+            ganasteTexto = true;
+        }
+
+        Assert.IsTrue(ganasteTexto);
+
+    }
+
+
 }
+

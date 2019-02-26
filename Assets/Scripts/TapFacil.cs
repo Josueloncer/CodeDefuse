@@ -19,9 +19,7 @@ public class TapFacil : MonoBehaviour
     public int valorMin = 1;
     public int valorMax = 6;
 
-    [Space(20)]
     public int valorSorteado;
-    [Space(20)]
     public List<int> numeroJaSorteados = new List<int>();
 
     int numeroAleatorio;
@@ -34,10 +32,6 @@ public class TapFacil : MonoBehaviour
     public void Start()
     {
         StartCoroutine(Contador());
-        //numeroRandom = Random.Range(1, 6);
-        //numeroRandom2 = Random.Range(1, 6);
-        //numeroRandom3 = Random.Range(1, 6);
-        //numeroRandom4 = Random.Range(1, 6);
         valorSorteado = GenerarNumeros();
         valorSorteado = GenerarNumeros2();
         valorSorteado = GenerarNumeros3();

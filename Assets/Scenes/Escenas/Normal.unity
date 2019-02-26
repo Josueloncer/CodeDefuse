@@ -5000,8 +5000,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d484ea993ea84c76b2be4ad8ded9a19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  valorMin: 1
+  valorMax: 8
   NumeroTap: {fileID: 488119531}
   contador: 0
+  valorSorteado: 0
+  numerosSorteados: 
 --- !u!4 &360395295
 Transform:
   m_ObjectHideFlags: 0
