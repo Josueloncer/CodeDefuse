@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class TapFacil : MonoBehaviour
@@ -20,7 +21,7 @@ public class TapFacil : MonoBehaviour
     public int valorMax = 6;
 
     public int valorSorteado;
-    public List<int> numeroJaSorteados = new List<int>();
+    public List<int> numeroSorteados = new List<int>();
 
     int numeroAleatorio;
     int numeroAleatorio2;
@@ -45,14 +46,14 @@ public class TapFacil : MonoBehaviour
 
     public int GenerarNumeros()
     {
-        if (Mathf.Abs(valorMax - valorMin) > numeroJaSorteados.Count)
+        if (Mathf.Abs(valorMax - valorMin) > numeroSorteados.Count)
         {
             while (true)
             {
                 numeroAleatorio = Random.Range(1, 6);
-                if (numeroJaSorteados.Contains(numeroAleatorio)==false)
+                if (numeroSorteados.Contains(numeroAleatorio)==false)
                 {
-                    numeroJaSorteados.Add(numeroAleatorio);
+                    numeroSorteados.Add(numeroAleatorio);
                     return numeroAleatorio;
                 }
             }
@@ -66,14 +67,14 @@ public class TapFacil : MonoBehaviour
 
     public int GenerarNumeros2()
     {
-        if (Mathf.Abs(valorMax - valorMin) > numeroJaSorteados.Count)
+        if (Mathf.Abs(valorMax - valorMin) > numeroSorteados.Count)
         {
             while (true)
             {
                 numeroAleatorio2 = Random.Range(valorMin, valorMax);
-                if (numeroJaSorteados.Contains(numeroAleatorio3)==false)
+                if (numeroSorteados.Contains(numeroAleatorio3)==false)
                 {
-                    numeroJaSorteados.Add(numeroAleatorio2
+                    numeroSorteados.Add(numeroAleatorio2
 );
                     return numeroAleatorio2;
                 }
@@ -88,14 +89,14 @@ public class TapFacil : MonoBehaviour
 
     public int GenerarNumeros3()
     {
-        if (Mathf.Abs(valorMax - valorMin) > numeroJaSorteados.Count)
+        if (Mathf.Abs(valorMax - valorMin) > numeroSorteados.Count)
         {
             while (true)
             {
                 numeroAleatorio3 = Random.Range(valorMin, valorMax);
-                if (numeroJaSorteados.Contains(numeroAleatorio3)==false)
+                if (numeroSorteados.Contains(numeroAleatorio3)==false)
                 {
-                    numeroJaSorteados.Add(numeroAleatorio3);
+                    numeroSorteados.Add(numeroAleatorio3);
                     return numeroAleatorio3;
                 }
             }
@@ -109,14 +110,14 @@ public class TapFacil : MonoBehaviour
 
     public int GenerarNumeros4()
     {
-        if (Mathf.Abs(valorMax - valorMin) > numeroJaSorteados.Count)
+        if (Mathf.Abs(valorMax - valorMin) > numeroSorteados.Count)
         {
             while (true)
             {
                 numeroAleatorio4 = Random.Range(valorMin, valorMax);
-                if (numeroJaSorteados.Contains(numeroAleatorio4)==false)
+                if (numeroSorteados.Contains(numeroAleatorio4)==false)
                 {
-                    numeroJaSorteados.Add(numeroAleatorio4);
+                    numeroSorteados.Add(numeroAleatorio4);
                     return numeroAleatorio4;
                 }
             }
@@ -183,7 +184,6 @@ public class TapFacil : MonoBehaviour
 
         }
     }
-    
 
     public void MostrarContador()
     {
