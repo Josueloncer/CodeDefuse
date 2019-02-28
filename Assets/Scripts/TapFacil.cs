@@ -30,10 +30,12 @@ public class TapFacil : MonoBehaviour
 
     bool ganaste = false;
 
+	private TapFacilEngine engine = new TapFacilEngine();
+
     public void Start()
     {
         StartCoroutine(Contador());
-        valorSorteado = GenerarNumeros();
+        GenerarNumeros();
         valorSorteado = GenerarNumeros2();
         valorSorteado = GenerarNumeros3();
         valorSorteado = GenerarNumeros4();
@@ -44,25 +46,9 @@ public class TapFacil : MonoBehaviour
 
     }
 
-    public int GenerarNumeros()
+    public void GenerarNumeros()
     {
-        if (Mathf.Abs(valorMax - valorMin) > numeroSorteados.Count)
-        {
-            while (true)
-            {
-                numeroAleatorio = Random.Range(1, 6);
-                if (numeroSorteados.Contains(numeroAleatorio)==false)
-                {
-                    numeroSorteados.Add(numeroAleatorio);
-                    return numeroAleatorio;
-                }
-            }
-        }
-        else
-        {
-            Debug.LogError("Todos los numeros fueron sorteados");
-            return 0;
-        }
+	    numeroSorteados = engine.CreateRandomList(valorMin, valorMax, 6);
     }
 
     public int GenerarNumeros2()
