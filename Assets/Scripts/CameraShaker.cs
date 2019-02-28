@@ -24,9 +24,17 @@ public class CameraShaker : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(shouldShake)
+        if(Input.GetKey(KeyCode.Space))
         {
-            if(duration>0)
+            shake();
+        }
+	}
+
+    public void shake()
+    {
+        if (shouldShake)
+        {
+            if (duration > 0)
             {
                 camera.localPosition = startPosition + Random.insideUnitSphere * power;
                 duration -= Time.deltaTime * slowDownAmount;
@@ -38,6 +46,5 @@ public class CameraShaker : MonoBehaviour {
                 camera.localPosition = startPosition;
             }
         }
-
-	}
+    }
 }
