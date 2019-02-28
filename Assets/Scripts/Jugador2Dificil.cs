@@ -59,7 +59,7 @@ public class Jugador2Dificil : MonoBehaviour {
 
     public void TapContador()
     {
-        if (Input.GetKeyUp("right shift") == true)
+        if (Input.GetKeyDown(KeyCode.M))
         {
             contador = contador + 1;
             activar = true;
