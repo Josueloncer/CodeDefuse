@@ -53,7 +53,7 @@ public class Jugador1Normal : MonoBehaviour {
 
     public void TapContador()
     {
-        if (Input.GetKeyUp("left shift") == true)
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             contador = contador + 1;
             activar = true;

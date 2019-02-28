@@ -48,7 +48,7 @@ public class Jugador2Facil : MonoBehaviour {
 
     public void TapContador()
     {
-        if (Input.GetKeyUp("right shift") == true)
+        if (Input.GetKeyDown(KeyCode.M))
         {
             contador = contador + 1;
             activar = true;
