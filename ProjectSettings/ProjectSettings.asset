@@ -615,11 +615,15 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Build: 0
+    Collab: 0
+    ErrorHub: 0
+    Hub: 0
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: ded72ab1-72e8-4d11-9aff-a9928517a6e9
-  projectName: CodeDefuse
+  cloudProjectId: e64c2b3a-c047-49e0-9159-cf6e4b77ba92
+  projectName: CodeDefuse (1)
   organizationId: josue-2293583
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0

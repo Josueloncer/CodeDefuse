@@ -15,6 +15,8 @@ public class TapMedio : MonoBehaviour {
     public int valorMin = 1;
     public int valorMax = 6;
 
+    public Text ganaste;
+
     public Text NumeroTap;
     public int contador;
 
@@ -30,7 +32,7 @@ public class TapMedio : MonoBehaviour {
     public static bool numeroRandomBool5 = false;
     public static bool numeroRandomBool6 = false;
 
-    bool ganaste = false;
+    public GameObject ganasteText;
 
     public void Start()
     {
@@ -242,6 +244,7 @@ public class TapMedio : MonoBehaviour {
             if (contador == numeroAleatorio6)
             {
                 numeroRandomBool6 = true;
+                ganasteText.SetActive(true);
             }
         }
 
