@@ -56,12 +56,12 @@ public class LogicaJ1 : MonoBehaviour
     {
         Scene EscenaActual = SceneManager.GetActiveScene();
         int NumeroEscenaActual = EscenaActual.buildIndex;
-        revisarEngine.RegresarNumeroDeFocos(NumeroEscenaActual+1);
+        revisarEngine.RegresarNumeroDeFocos(NumeroEscenaActual);
     }
 
     void Start()
     {
-        ListaNumeros = engine.CreateRandomList(valorMin, valorMax, RevisarEscena.FocosParaNivel+1);     //ELIMINR EL +1 CUANDO ACOMODEN LAS ESCENAS
+        ListaNumeros = engine.CreateRandomList(valorMin, valorMax, RevisarEscena.FocosParaNivel);     //ELIMINR EL +1 CUANDO ACOMODEN LAS ESCENAS
     }
 
     void Update()
@@ -73,7 +73,7 @@ public class LogicaJ1 : MonoBehaviour
                 {
                     Tap_Final = Tap_Del_Jugador;
                     Tap_Del_Jugador = 0;
-                    condicion.RevisionResultado(Tap_Final, ListaNumeros[Numero_De_Focos_Prendidos + 1], Numero_De_Focos_Prendidos);
+                    condicion.RevisionResultado(Tap_Final, ListaNumeros[Numero_De_Focos_Prendidos], Numero_De_Focos_Prendidos);
                     PrenderLed( Numero_De_Focos_Prendidos);
                 }
             }

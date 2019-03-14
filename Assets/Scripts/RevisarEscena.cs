@@ -9,30 +9,30 @@ public class RevisarEscena
     {
         switch (EscnaActual)
         {
-            case 1:
+            case 8:
                 FocosParaNivel = 4;
                 break;
-            case 2:
+            case 9:
                 FocosParaNivel = 6;
                 break;
-            case 3:
+            case 10:
                 FocosParaNivel = 8;
                 break;
-            case 4:
+            case 11:
                 FocosParaNivel = 10;
                 break;
 
 
-            case 5:
+            case 12:
                 FocosParaNivel = 4;
                 break;
-            case 6:
+            case 13:
                 FocosParaNivel = 6;
                 break;
-            case 7:
+            case 14:
                 FocosParaNivel = 8;
                 break;
-            case 8:
+            case 15:
                 FocosParaNivel = 10;
                 break;
         }
