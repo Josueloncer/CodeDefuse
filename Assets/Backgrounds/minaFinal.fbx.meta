@@ -1,0 +1,149 @@
+fileFormatVersion: 2
+guid: 62d2b76f75b1844409a2d32d9a0265b7
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: carrito
+    100002: Mesh Light
+    100004: Mesh Light (2)
+    100006: //RootNode
+    100008: Point Light
+    100010: Texture Group
+    400000: carrito
+    400002: Mesh Light
+    400004: Mesh Light (2)
+    400006: //RootNode
+    400008: Point Light
+    400010: Texture Group
+    2100000: carrito
+    2100002: coal
+    2100004: pillar
+    2100006: wall
+    2100008: wood
+    2100010: StingrayPBS2SG
+    2100012: StingrayPBS1SG
+    2100014: Default
+    2100016: Caja
+    2100018: Caja2
+    2100020: Madera
+    2100022: Metal
+    2100024: Cinta
+    2100026: Interior
+    2100028: Dinamita
+    2100030: Tarjeta
+    2100032: Componente
+    2100034: Componentes ORO
+    2100036: Cables
+    2100038: Contador
+    2100040: battery_Light
+    2100042: Silver
+    2100044: base
+    2100046: Black
+    2100048: Keyboard
+    2100050: Green_plastic
+    2100052: Red_plastic
+    2100054: Yellow_Plastic
+    2100056: Lights_Off
+    2100058: Cable_Strip
+    2100060: Screen
+    2100062: Power_Light
+    2100064: Middle
+    2100066: CD_Sticker
+    2100068: CD_Plastic
+    2100070: CD_Silver
+    2100072: Logo
+    2100074: Screen_Logo
+    2100076: box
+    2300000: carrito
+    3300000: carrito
+    4300000: carrito
+    7400000: Take 001
+    9500000: //RootNode
+    10800000: Point Light
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
