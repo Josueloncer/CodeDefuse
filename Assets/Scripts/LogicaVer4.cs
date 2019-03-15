@@ -18,7 +18,7 @@ public class LogicaVer4 : MonoBehaviour
     public int valorMin = 1;
     public int valorMax = 6;
 
-    static bool Gano;
+    public static bool Gano;
 
     public GameObject TextoGanador;
     public GameObject TextoPerdedor;
@@ -82,12 +82,22 @@ public class LogicaVer4 : MonoBehaviour
                 MouseClik();
                 DeltaTime -= Time.deltaTime * 1;
                 tiempoEngine.TiempoJuego(DeltaTime);
-                victoriaEngin.condiciondevictoria(Numero_De_Focos_Prendidos, RevisarEscena.FocosParaNivel);
-                derrotaEngine.RevisarTiempo(DeltaTime);
-                TxtTiempo.text = DeltaTime.ToString("F0");
+                //victoriaEngin.condiciondevictoria(Numero_De_Focos_Prendidos, RevisarEscena.FocosParaNivel);
+                if(victoriaEngin.condiciondevictoria(Numero_De_Focos_Prendidos, RevisarEscena.FocosParaNivel) == true)
+                    {
+                        SceneManager.LoadScene("02Menu");
+                    }
+                //derrotaEngine.RevisarTiempo(DeltaTime);
+                if (derrotaEngine.RevisarTiempo(DeltaTime) == true)
+                {
+                    SceneManager.LoadScene("02Menu");
+                }
+            TxtTiempo.text = DeltaTime.ToString("F0");
             }
 
             TxtTaps.text = Tap_Del_Jugador.ToString();
+            
+
 
     }
 
