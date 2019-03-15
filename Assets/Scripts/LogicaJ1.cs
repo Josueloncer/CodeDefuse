@@ -19,7 +19,13 @@ public class LogicaJ1 : MonoBehaviour
     public int valorMin = 1;
     public int valorMax = 6;
 
+    public float TimeNexScene = 4;
 
+    public static float TiempoDeEsperaParaRegrezarAMenu;
+
+
+    public GameObject TxtGanarJ1;
+    public static int J1Gano = 0;
 
     public GameObject Foco1;
     public GameObject Foco2;
@@ -43,15 +49,15 @@ public class LogicaJ1 : MonoBehaviour
     public List<int> ListaNumeros = new List<int>();
     public Tiempo tiempo = new Tiempo();
     public RevisarEscena revisar = new RevisarEscena();
-    public CondicionVictoria Victoria = new CondicionVictoria();
     public CondicionDerrota Derrota = new CondicionDerrota();
-    private CondicionVictoria victoriaEngin = new CondicionVictoria();
+    private CondicionVictoriaJ1 victoriaEngin = new CondicionVictoriaJ1();
     private CondicionDerrota derrotaEngine = new CondicionDerrota();
     private GenerarNumeros engine = new GenerarNumeros();
     private RevisionJ1 condicion = new RevisionJ1();
     private Tiempo tiempoEngine = new Tiempo();
     private RevisarEscena revisarEngine = new RevisarEscena();
-    
+    private QuienGano quienganoengine = new QuienGano();
+
     private void Awake()
     {
         Scene EscenaActual = SceneManager.GetActiveScene();
@@ -66,6 +72,17 @@ public class LogicaJ1 : MonoBehaviour
 
     void Update()
     {
+
+        if (quienganoengine.Gano(J1Gano) == 1)
+        {
+            TxtGanarJ1.active = true;
+            TimeNexScene -= Time.deltaTime * 1;
+        }
+        if (TimeNexScene <= 0)
+        {
+            SceneManager.LoadScene("02Menu");
+        }
+
         if (Tiempo_De_Espera_Despues_Del_Tap >= 0 && DeltaTime > 0)
             {
                 Tiempo_De_Espera_Despues_Del_Tap -= Time.deltaTime * 1;
@@ -73,7 +90,7 @@ public class LogicaJ1 : MonoBehaviour
                 {
                     Tap_Final = Tap_Del_Jugador;
                     Tap_Del_Jugador = 0;
-                    condicion.RevisionResultado(Tap_Final, ListaNumeros[Numero_De_Focos_Prendidos], Numero_De_Focos_Prendidos);
+                    condicion.RevisionResultado(Tap_Final, ListaNumeros[Numero_De_Focos_Prendidos], Numero_De_Focos_Prendidos);  
                     PrenderLed( Numero_De_Focos_Prendidos);
                 }
             }
@@ -90,7 +107,8 @@ public class LogicaJ1 : MonoBehaviour
 
             TxtTaps.text = Tap_Del_Jugador.ToString();
 
-            
+        
+
     }
 
     void MouseClik()
