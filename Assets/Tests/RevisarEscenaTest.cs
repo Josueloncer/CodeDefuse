@@ -3,15 +3,17 @@ using UnityEngine.TestTools;
 using NUnit.Framework;
 using System.Collections;
 
-public class RevisarEscenaTest {
+public class RevisarEscenaTest
+{
 
     [Test]
-    public void RevisarEscenaFacil() {
-        
+    public void RevisarEscenaFacil()
+    {
+
         var engine = new RevisarEscena();
 
         int _FocosParaNivel = 4;
-        int _EscenaActual = 1;
+        int _EscenaActual = 8;
 
         var resutado = engine.RegresarNumeroDeFocos(_EscenaActual);
 
@@ -26,7 +28,7 @@ public class RevisarEscenaTest {
         var engine = new RevisarEscena();
 
         int _FocosParaNivel = 6;
-        int _EscenaActual = 2;
+        int _EscenaActual = 9;
 
         var resutado = engine.RegresarNumeroDeFocos(_EscenaActual);
 
@@ -41,7 +43,7 @@ public class RevisarEscenaTest {
         var engine = new RevisarEscena();
 
         int _FocosParaNivel = 8;
-        int _EscenaActual = 3;
+        int _EscenaActual = 10;
 
         var resutado = engine.RegresarNumeroDeFocos(_EscenaActual);
 
@@ -56,7 +58,7 @@ public class RevisarEscenaTest {
         var engine = new RevisarEscena();
 
         int _FocosParaNivel = 10;
-        int _EscenaActual = 4;
+        int _EscenaActual = 11;
 
         var resutado = engine.RegresarNumeroDeFocos(_EscenaActual);
 
@@ -71,7 +73,7 @@ public class RevisarEscenaTest {
         var engine = new RevisarEscena();
 
         int _FocosParaNivel = 4;
-        int _EscenaActual = 5;
+        int _EscenaActual = 12;
 
         var resutado = engine.RegresarNumeroDeFocos(_EscenaActual);
 
@@ -86,7 +88,7 @@ public class RevisarEscenaTest {
         var engine = new RevisarEscena();
 
         int _FocosParaNivel = 6;
-        int _EscenaActual =6;
+        int _EscenaActual = 13;
 
         var resutado = engine.RegresarNumeroDeFocos(_EscenaActual);
 
@@ -101,7 +103,7 @@ public class RevisarEscenaTest {
         var engine = new RevisarEscena();
 
         int _FocosParaNivel = 8;
-        int _EscenaActual = 7;
+        int _EscenaActual = 14;
 
         var resutado = engine.RegresarNumeroDeFocos(_EscenaActual);
 
@@ -116,7 +118,7 @@ public class RevisarEscenaTest {
         var engine = new RevisarEscena();
 
         int _FocosParaNivel = 10;
-        int _EscenaActual = 8;
+        int _EscenaActual = 15;
 
         var resutado = engine.RegresarNumeroDeFocos(_EscenaActual);
 

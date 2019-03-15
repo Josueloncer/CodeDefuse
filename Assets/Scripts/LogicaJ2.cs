@@ -18,6 +18,15 @@ public class LogicaJ2 : MonoBehaviour
     public int valorMin = 1;
     public int valorMax = 6;
 
+    public float TimeNexScene = 4;
+
+
+
+    public static float TiempoDeEsperaParaRegrezarAMenu;
+
+
+    public GameObject TxtGanarJ2;
+    public static int J2Gano = 0;
 
     public GameObject Foco1;
     public GameObject Foco2;
@@ -37,14 +46,14 @@ public class LogicaJ2 : MonoBehaviour
     public List<int> ListaNumeros = new List<int>();
     public Tiempo tiempo = new Tiempo();
     public RevisarEscena revisar = new RevisarEscena();
-    public CondicionVictoria Victoria = new CondicionVictoria();
     public CondicionDerrota Derrota = new CondicionDerrota();
-    private CondicionVictoria victoriaEngin = new CondicionVictoria();
+    private CondicionVictoriaJ2 victoriaEngin = new CondicionVictoriaJ2();
     private CondicionDerrota derrotaEngine = new CondicionDerrota();
     private GenerarNumeros engine = new GenerarNumeros();
     private RevisionJ2 condicion = new RevisionJ2();
     private Tiempo tiempoEngine = new Tiempo();
     private RevisarEscena revisarEngine = new RevisarEscena();
+    private QuienGano quienganoengine  = new QuienGano();
     
     private void Awake()
     {
@@ -61,6 +70,17 @@ public class LogicaJ2 : MonoBehaviour
 
     void Update()
     {
+        if (quienganoengine.Gano(J2Gano) == 2)
+        {
+            TxtGanarJ2.active = true;
+            TimeNexScene -= Time.deltaTime * 1;
+        }
+
+        if (TimeNexScene <= 0)
+        {
+            SceneManager.LoadScene("02Menu");
+        }
+
         if (Tiempo_De_Espera_Despues_Del_Tap >= 0 && DeltaTime > 0)
             {
                 Tiempo_De_Espera_Despues_Del_Tap -= Time.deltaTime * 1;
@@ -79,12 +99,15 @@ public class LogicaJ2 : MonoBehaviour
                 DeltaTime -= Time.deltaTime * 1;
                 tiempoEngine.TiempoJuego(DeltaTime);
                 victoriaEngin.condiciondevictoria(Numero_De_Focos_Prendidos, RevisarEscena.FocosParaNivel);
+                quienganoengine.Gano(0);// EL QUIEN GANO EL JUEGO    
                 derrotaEngine.RevisarTiempo(DeltaTime);
                 TxtTiempo.text = DeltaTime.ToString("F0");
+
             }
 
             TxtTaps.text = Tap_Del_Jugador.ToString();
 
+            
             
     }
 
@@ -172,5 +195,7 @@ public class LogicaJ2 : MonoBehaviour
         }
         return true;
     }
+
+    
 
 }

@@ -18,6 +18,10 @@ public class LogicaVer4 : MonoBehaviour
     public int valorMin = 1;
     public int valorMax = 6;
 
+    static bool Gano;
+
+    public GameObject TextoGanador;
+    public GameObject TextoPerdedor;
 
     public GameObject Foco1;
     public GameObject Foco2;
