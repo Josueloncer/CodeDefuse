@@ -8,7 +8,6 @@ public class RestablecerStatic : MonoBehaviour {
     {
         LogicaVer4.Numero_De_Focos_Prendidos = 0;
         LogicaVer4.Jugando = true;
-        LogicaVer4.Gano = false;
 
         LogicaJ1.Numero_De_Focos_Prendidos = 0;
         LogicaJ1.Jugando = true;

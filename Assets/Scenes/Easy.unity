@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.20916983, g: 0.1838373, b: 0.13439438, a: 1}
+  m_IndirectSpecularColor: {r: 0.2091695, g: 0.1838372, b: 0.1343944, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1363,18 +1363,11 @@ MonoBehaviour:
   DeltaTime: 60
   valorMin: 1
   valorMax: 6
-  TextoGanador: {fileID: 0}
-  TextoPerdedor: {fileID: 0}
-  Foco1: {fileID: 501113738}
-  Foco2: {fileID: 990490183}
-  Foco3: {fileID: 1291677117}
-  Foco4: {fileID: 44917944}
-  Foco5: {fileID: 0}
-  Foco6: {fileID: 0}
-  Foco7: {fileID: 0}
-  Foco8: {fileID: 0}
-  Foco9: {fileID: 0}
-  Foco10: {fileID: 0}
+  Leds:
+  - {fileID: 501113738}
+  - {fileID: 990490183}
+  - {fileID: 1291677117}
+  - {fileID: 44917944}
   TxtTiempo: {fileID: 1731626862}
   TxtTaps: {fileID: 241787875}
   ListaNumeros: 
@@ -1382,7 +1375,8 @@ MonoBehaviour:
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1886513848}
   m_Enabled: 1
   serializedVersion: 4

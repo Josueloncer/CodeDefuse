@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-
-public class RevisarEscena
+﻿public class RevisarEscena
 {
     public static int FocosParaNivel;
 

@@ -17,11 +17,11 @@ public class RevisionFocosTest {
 
         var engine = new Revision();
 
-        var result = engine.RevisionResultado(Tapfinal, NumeroDeLista, NumeroDeFocosPrendidos);
+        var result = engine.RevisionResultado(Tapfinal, NumeroDeLista);
 
         Assert.IsTrue(result);
 
-        var result2 = engine.RevisionResultado(Tapfinal+1, NumeroDeLista, NumeroDeFocosPrendidos);
+        var result2 = engine.RevisionResultado(Tapfinal+1, NumeroDeLista);
 
         Assert.IsFalse(result2);
 
@@ -37,11 +37,11 @@ public class RevisionFocosTest {
 
         var engine = new Revision();
 
-        var result = engine.RevisionResultado(Tapfinal, NumeroDeLista, NumeroDeFocosPrendidos);
+        var result = engine.RevisionResultado(Tapfinal, NumeroDeLista);
 
         Assert.IsTrue(result);
 
-        var result2 = engine.RevisionResultado(Tapfinal + 1, NumeroDeLista, NumeroDeFocosPrendidos);
+        var result2 = engine.RevisionResultado(Tapfinal + 1, NumeroDeLista);
 
         Assert.IsFalse(result2);
 
@@ -57,11 +57,11 @@ public class RevisionFocosTest {
 
         var engine = new Revision();
 
-        var result = engine.RevisionResultado(Tapfinal, NumeroDeLista, NumeroDeFocosPrendidos);
+        var result = engine.RevisionResultado(Tapfinal, NumeroDeLista);
 
         Assert.IsTrue(result);
 
-        var result2 = engine.RevisionResultado(Tapfinal + 1, NumeroDeLista, NumeroDeFocosPrendidos);
+        var result2 = engine.RevisionResultado(Tapfinal + 1, NumeroDeLista);
 
         Assert.IsFalse(result2);
 
@@ -77,11 +77,11 @@ public class RevisionFocosTest {
 
         var engine = new Revision();
 
-        var result = engine.RevisionResultado(Tapfinal, NumeroDeLista, NumeroDeFocosPrendidos);
+        var result = engine.RevisionResultado(Tapfinal, NumeroDeLista);
 
         Assert.IsTrue(result);
 
-        var result2 = engine.RevisionResultado(Tapfinal + 1, NumeroDeLista, NumeroDeFocosPrendidos);
+        var result2 = engine.RevisionResultado(Tapfinal + 1, NumeroDeLista);
 
         Assert.IsFalse(result2);
 
@@ -97,11 +97,11 @@ public class RevisionFocosTest {
 
         var engine = new Revision();
 
-        var result = engine.RevisionResultado(Tapfinal, NumeroDeLista, NumeroDeFocosPrendidos);
+        var result = engine.RevisionResultado(Tapfinal, NumeroDeLista);
 
         Assert.IsTrue(result);
 
-        var result2 = engine.RevisionResultado(Tapfinal + 1, NumeroDeLista, NumeroDeFocosPrendidos);
+        var result2 = engine.RevisionResultado(Tapfinal + 1, NumeroDeLista);
 
         Assert.IsFalse(result2);
 
@@ -117,11 +117,11 @@ public class RevisionFocosTest {
 
         var engine = new Revision();
 
-        var result = engine.RevisionResultado(Tapfinal, NumeroDeLista, NumeroDeFocosPrendidos);
+        var result = engine.RevisionResultado(Tapfinal, NumeroDeLista);
 
         Assert.IsTrue(result);
 
-        var result2 = engine.RevisionResultado(Tapfinal + 1, NumeroDeLista, NumeroDeFocosPrendidos);
+        var result2 = engine.RevisionResultado(Tapfinal + 1, NumeroDeLista);
 
         Assert.IsFalse(result2);
 
@@ -137,11 +137,11 @@ public class RevisionFocosTest {
 
         var engine = new Revision();
 
-        var result = engine.RevisionResultado(Tapfinal, NumeroDeLista, NumeroDeFocosPrendidos);
+        var result = engine.RevisionResultado(Tapfinal, NumeroDeLista);
 
         Assert.IsTrue(result);
 
-        var result2 = engine.RevisionResultado(Tapfinal + 1, NumeroDeLista, NumeroDeFocosPrendidos);
+        var result2 = engine.RevisionResultado(Tapfinal + 1, NumeroDeLista);
 
         Assert.IsFalse(result2);
 
@@ -156,11 +156,11 @@ public class RevisionFocosTest {
 
         var engine = new Revision();
 
-        var result = engine.RevisionResultado(Tapfinal, NumeroDeLista, NumeroDeFocosPrendidos);
+        var result = engine.RevisionResultado(Tapfinal, NumeroDeLista);
 
         Assert.IsTrue(result);
 
-        var result2 = engine.RevisionResultado(Tapfinal + 1, NumeroDeLista, NumeroDeFocosPrendidos);
+        var result2 = engine.RevisionResultado(Tapfinal + 1, NumeroDeLista);
 
         Assert.IsFalse(result2);
 
@@ -176,11 +176,11 @@ public class RevisionFocosTest {
 
         var engine = new Revision();
 
-        var result = engine.RevisionResultado(Tapfinal, NumeroDeLista, NumeroDeFocosPrendidos);
+        var result = engine.RevisionResultado(Tapfinal, NumeroDeLista);
 
         Assert.IsTrue(result);
 
-        var result2 = engine.RevisionResultado(Tapfinal + 1, NumeroDeLista, NumeroDeFocosPrendidos);
+        var result2 = engine.RevisionResultado(Tapfinal + 1, NumeroDeLista);
 
         Assert.IsFalse(result2);
 
@@ -196,11 +196,11 @@ public class RevisionFocosTest {
 
         var engine = new Revision();
 
-        var result = engine.RevisionResultado(Tapfinal, NumeroDeLista, NumeroDeFocosPrendidos);
+        var result = engine.RevisionResultado(Tapfinal, NumeroDeLista);
 
         Assert.IsTrue(result);
 
-        var result2 = engine.RevisionResultado(Tapfinal + 1, NumeroDeLista, NumeroDeFocosPrendidos);
+        var result2 = engine.RevisionResultado(Tapfinal + 1, NumeroDeLista);
 
         Assert.IsFalse(result2);
 
