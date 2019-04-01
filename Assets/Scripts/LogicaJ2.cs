@@ -11,8 +11,8 @@ public class LogicaJ2 : MonoBehaviour
     public static int Numero_De_Focos_Prendidos;
     public static bool Jugando = true;
 
-    public float Tiempo_De_Espera_Despues_Del_Tap = 1f;
-    public int Tap_Del_Jugador = 0;
+    static public float Tiempo_De_Espera_Despues_Del_Tap_2 = 1f;
+    static public int Tap_Del_Jugador_2 = 0;
     public int Tap_Final;
     public float DeltaTime;
     public int valorMin = 1;
@@ -44,9 +44,9 @@ public class LogicaJ2 : MonoBehaviour
     public Text TxtTaps;
     
     public List<int> ListaNumeros = new List<int>();
-    public Tiempo tiempo = new Tiempo();
-    public RevisarEscena revisar = new RevisarEscena();
-    public CondicionDerrota Derrota = new CondicionDerrota();
+    private Tiempo tiempo = new Tiempo();
+    private RevisarEscena revisar = new RevisarEscena();
+    private CondicionDerrota Derrota = new CondicionDerrota();
     private CondicionVictoriaJ2 victoriaEngin = new CondicionVictoriaJ2();
     private CondicionDerrota derrotaEngine = new CondicionDerrota();
     private GenerarNumeros engine = new GenerarNumeros();
@@ -54,7 +54,8 @@ public class LogicaJ2 : MonoBehaviour
     private Tiempo tiempoEngine = new Tiempo();
     private RevisarEscena revisarEngine = new RevisarEscena();
     private QuienGano quienganoengine  = new QuienGano();
-    
+    private MouseClickJ2 ClicksDeMouseJ2 = new MouseClickJ2();
+
     private void Awake()
     {
         Scene EscenaActual = SceneManager.GetActiveScene();
@@ -81,13 +82,13 @@ public class LogicaJ2 : MonoBehaviour
             SceneManager.LoadScene("02Menu");
         }
 
-        if (Tiempo_De_Espera_Despues_Del_Tap >= 0 && DeltaTime > 0)
+        if (Tiempo_De_Espera_Despues_Del_Tap_2 >= 0 && DeltaTime > 0)
             {
-                Tiempo_De_Espera_Despues_Del_Tap -= Time.deltaTime * 1;
-                if (Tiempo_De_Espera_Despues_Del_Tap <= 0)
+                Tiempo_De_Espera_Despues_Del_Tap_2 -= Time.deltaTime * 1;
+                if (Tiempo_De_Espera_Despues_Del_Tap_2 <= 0)
                 {
-                    Tap_Final = Tap_Del_Jugador;
-                    Tap_Del_Jugador = 0;
+                    Tap_Final = Tap_Del_Jugador_2;
+                    Tap_Del_Jugador_2 = 0;
                     condicion.RevisionResultado(Tap_Final, ListaNumeros[Numero_De_Focos_Prendidos], Numero_De_Focos_Prendidos);
                     PrenderLed( Numero_De_Focos_Prendidos);
                 }
@@ -105,7 +106,7 @@ public class LogicaJ2 : MonoBehaviour
 
             }
 
-            TxtTaps.text = Tap_Del_Jugador.ToString();
+            TxtTaps.text = Tap_Del_Jugador_2.ToString();
 
             
             
@@ -115,12 +116,7 @@ public class LogicaJ2 : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.M))
         {
-            Tap_Del_Jugador += 1;
-            Tiempo_De_Espera_Despues_Del_Tap = .5f;
-            if (Tap_Del_Jugador >= 7)
-            {
-                Tap_Del_Jugador = 1;
-            }
+            ClicksDeMouseJ2.RevisarClicks(true);
         }
     }
 
