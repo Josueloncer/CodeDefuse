@@ -18,17 +18,6 @@ public class LogicaVer4 : MonoBehaviour
 
     public static bool Gano;
 
-    public GameObject Foco1;
-    public GameObject Foco2;
-    public GameObject Foco3;
-    public GameObject Foco4;
-    public GameObject Foco5;
-    public GameObject Foco6;
-    public GameObject Foco7;
-    public GameObject Foco8;
-    public GameObject Foco9;
-    public GameObject Foco10;
-
     public GameObject[] Leds;
 
     [Header("Textos")]
@@ -94,11 +83,7 @@ public class LogicaVer4 : MonoBehaviour
             }
 
             TxtTaps.text = Tap_Del_Jugador.ToString();
-            
-
-
     }
-
     
     void MouseClik()
     {
@@ -107,7 +92,6 @@ public class LogicaVer4 : MonoBehaviour
             ClicksDeMouse.RevisarClicks(true);
         }
     }
-
 
     public bool PrenderLed(int Numero_De_Focos_Prendidos)
     {
@@ -123,5 +107,4 @@ public class LogicaVer4 : MonoBehaviour
 	    Leds[Numero_De_Focos_Prendidos - 1].SetActive(false);
         return true;
     }
-
 }
