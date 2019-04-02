@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Runtime.Remoting.Messaging;
-using System.Security.Policy;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LogicaVer4 : MonoBehaviour
 {
@@ -20,9 +18,6 @@ public class LogicaVer4 : MonoBehaviour
 
     public static bool Gano;
 
-    public GameObject TextoGanador;
-    public GameObject TextoPerdedor;
-
     public GameObject Foco1;
     public GameObject Foco2;
     public GameObject Foco3;
@@ -33,6 +28,8 @@ public class LogicaVer4 : MonoBehaviour
     public GameObject Foco8;
     public GameObject Foco9;
     public GameObject Foco10;
+
+    public GameObject[] Leds;
 
     [Header("Textos")]
     public Text TxtTiempo;
@@ -114,73 +111,16 @@ public class LogicaVer4 : MonoBehaviour
 
     public bool PrenderLed(int Numero_De_Focos_Prendidos)
     {
-        switch (Numero_De_Focos_Prendidos)
-        {
-            case 0:
-                Foco1.SetActive(true);
-                Foco2.SetActive(true);
-                Foco3.SetActive(true);
-                Foco4.SetActive(true);
-                Foco5.SetActive(true);
-                Foco6.SetActive(true);
-                Foco7.SetActive(true);
-                Foco8.SetActive(true);
-                Foco9.SetActive(true);
-                Foco10.SetActive(true);
-                return false;
-                break;
+	    if (Numero_De_Focos_Prendidos == 0)
+	    {
+		    for (int i = 0; i < Leds.Length; i++)
+		    {
+			    Leds[i].SetActive(true);
+		    }
+		    return false;
+	    }
 
-            case 1:
-                Foco1.SetActive(false);
-                return true;
-                break;
-
-            case 2:
-                Foco2.SetActive(false);
-                return true;
-                break;
-
-            case 3:
-                Foco3.SetActive(false);
-                return true;
-                break;
-
-            case 4:
-                Foco4.SetActive(false);
-                return true;
-                break;
-
-            case 5:
-                Foco5.SetActive(false);
-                return true;
-                break;
-
-            case 6:
-                Foco6.SetActive(false);
-                return true;
-                break;
-
-            case 7:
-                Foco7.SetActive(false);
-                return true;
-                break;
-
-            case 8:
-                Foco8.SetActive(false);
-                return true;
-                break;
-
-            case 9:
-                Foco9.SetActive(false);
-                return true;
-                break;
-
-            case 10:
-                Foco10.SetActive(false);
-                return true;
-                break;
-
-        }
+	    Leds[Numero_De_Focos_Prendidos - 1].SetActive(false);
         return true;
     }
 

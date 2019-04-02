@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1666,14 +1666,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8453b34b5242e8b44aed2c8f1ea23d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tiempo_De_Espera_Despues_Del_Tap: 1
-  Tap_Del_Jugador: 0
   Tap_Final: 0
   DeltaTime: 60
   valorMin: 1
   valorMax: 6
-  TextoGanador: {fileID: 0}
-  TextoPerdedor: {fileID: 0}
   Foco1: {fileID: 1774520650}
   Foco2: {fileID: 398923169}
   Foco3: {fileID: 708544586}
@@ -1684,6 +1680,13 @@ MonoBehaviour:
   Foco8: {fileID: 0}
   Foco9: {fileID: 0}
   Foco10: {fileID: 0}
+  Leds:
+  - {fileID: 1774520650}
+  - {fileID: 398923169}
+  - {fileID: 708544586}
+  - {fileID: 1232153243}
+  - {fileID: 1181152308}
+  - {fileID: 505868535}
   TxtTiempo: {fileID: 206319414}
   TxtTaps: {fileID: 1754918226}
   ListaNumeros: 
@@ -1691,7 +1694,8 @@ MonoBehaviour:
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1886513848}
   m_Enabled: 1
   serializedVersion: 4
