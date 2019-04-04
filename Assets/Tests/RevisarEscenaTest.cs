@@ -5,7 +5,7 @@ using System.Collections;
 
 public class RevisarEscenaTest
 {
-
+    
     [Test]
     public void RevisarEscenaFacil()
     {
@@ -35,7 +35,7 @@ public class RevisarEscenaTest
         Assert.AreEqual(6, _FocosParaNivel);
 
     }
-
+    
     [Test]
     public void RevisarEscenaDificil()
     {
@@ -123,6 +123,6 @@ public class RevisarEscenaTest
         var resutado = engine.RegresarNumeroDeFocos(_EscenaActual);
 
         Assert.AreEqual(10, _FocosParaNivel);
-
+        
     }
 }

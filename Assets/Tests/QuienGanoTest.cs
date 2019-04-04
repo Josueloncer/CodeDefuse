@@ -4,18 +4,45 @@ using NUnit.Framework;
 using System.Collections;
 
 public class QuienGanoTest {
-
+    
     [Test]
-    public void QuienGanoTestSimplePasses() {
-        // Use the Assert class to test conditions.
+    public void QuienGanoTestSimplePasses1()
+    {
+
+        var engine = new QuienGano();
+        int _Ganador = 1;
+
+        var resultado = engine.Gano(_Ganador);
+
+        Assert.AreEqual(1, resultado);
+
+
     }
 
-    // A UnityTest behaves like a coroutine in PlayMode
-    // and allows you to yield null to skip a frame in EditMode
-    [UnityTest]
-    public IEnumerator QuienGanoTestWithEnumeratorPasses() {
-        // Use the Assert class to test conditions.
-        // yield to skip a frame
-        yield return null;
+    [Test]
+    public void QuienGanoTestSimplePasses2()
+    {
+
+        var engine = new QuienGano();
+        int _Ganador = 2;
+
+        var resultado = engine.Gano(_Ganador);
+
+        Assert.AreEqual(2, resultado);
+
+    }
+
+
+    [Test]
+    public void QuienGanoTestSimplePasses3()
+    {
+
+        var engine = new QuienGano();
+        int _Ganador = 0;
+
+        var resultado = engine.Gano(_Ganador);
+
+        Assert.AreEqual(0, resultado);
+
     }
 }

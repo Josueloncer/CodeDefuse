@@ -11,8 +11,8 @@ public class LogicaVer4 : MonoBehaviour
     public static int Numero_De_Focos_Prendidos;
     public static bool Jugando = true;
 
-    public float Tiempo_De_Espera_Despues_Del_Tap = 1f;
-    public int Tap_Del_Jugador = 0;
+    public static float Tiempo_De_Espera_Despues_Del_Tap = 1f;
+    public static int Tap_Del_Jugador = 0;
     public int Tap_Final;
     public float DeltaTime;
     public int valorMin = 1;
@@ -37,19 +37,20 @@ public class LogicaVer4 : MonoBehaviour
     [Header("Textos")]
     public Text TxtTiempo;
     public Text TxtTaps;
-    
+
     public List<int> ListaNumeros = new List<int>();
-    public Revision revision = new Revision();
-    public Tiempo tiempo = new Tiempo();
-    public RevisarEscena revisar = new RevisarEscena();
-    public CondicionVictoria Victoria = new CondicionVictoria();
-    public CondicionDerrota Derrota = new CondicionDerrota();
+    private Revision revision = new Revision();
+    private Tiempo tiempo = new Tiempo();
+    private RevisarEscena revisar = new RevisarEscena();
+    private CondicionVictoria Victoria = new CondicionVictoria();
+    private CondicionDerrota Derrota = new CondicionDerrota();
     private CondicionVictoria victoriaEngin = new CondicionVictoria();
     private CondicionDerrota derrotaEngine = new CondicionDerrota();
     private GenerarNumeros engine = new GenerarNumeros();
     private Revision condicion = new Revision();
     private Tiempo tiempoEngine = new Tiempo();
     private RevisarEscena revisarEngine = new RevisarEscena();
+    private MouseClick ClicksDeMouse = new MouseClick();
     
     private void Awake()
     {
@@ -101,18 +102,15 @@ public class LogicaVer4 : MonoBehaviour
 
     }
 
+    
     void MouseClik()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Tap_Del_Jugador += 1;
-            Tiempo_De_Espera_Despues_Del_Tap = .5f;
-            if (Tap_Del_Jugador >= 7)
-            {
-                Tap_Del_Jugador = 1;
-            }
+            ClicksDeMouse.RevisarClicks(true);
         }
     }
+
 
     public bool PrenderLed(int Numero_De_Focos_Prendidos)
     {
