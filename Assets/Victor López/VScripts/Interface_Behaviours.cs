@@ -46,7 +46,7 @@ public class Interface_Behaviours : MonoBehaviour {
         }
     }
 
-    //Abre(Añade) encima la escena especificada en el string.
+    //Abre(Añade) encima la escena especificada en el 
     public void AddScene(){
 		SceneManager.LoadScene(_WhichScene, LoadSceneMode.Additive);
 	}
