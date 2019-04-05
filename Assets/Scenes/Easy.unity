@@ -1306,18 +1306,11 @@ MonoBehaviour:
   DeltaTime: 60
   valorMin: 1
   valorMax: 6
-  TextoGanador: {fileID: 0}
-  TextoPerdedor: {fileID: 0}
-  Foco1: {fileID: 501113738}
-  Foco2: {fileID: 990490183}
-  Foco3: {fileID: 1291677117}
-  Foco4: {fileID: 44917944}
-  Foco5: {fileID: 2098515859}
-  Foco6: {fileID: 2098515859}
-  Foco7: {fileID: 2098515859}
-  Foco8: {fileID: 2098515859}
-  Foco9: {fileID: 2098515859}
-  Foco10: {fileID: 2098515859}
+  Leds:
+  - {fileID: 501113738}
+  - {fileID: 990490183}
+  - {fileID: 1291677117}
+  - {fileID: 44917944}
   TxtTiempo: {fileID: 1731626862}
   TxtTaps: {fileID: 241787875}
   ListaNumeros: 

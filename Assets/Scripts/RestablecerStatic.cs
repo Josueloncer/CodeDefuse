@@ -1,8 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
-public class RestablecerStatic : MonoBehaviour {
+public class RestablecerStatic{
     
 	void Start ()
     {

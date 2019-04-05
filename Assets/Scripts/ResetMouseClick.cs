@@ -8,11 +8,7 @@ public class ResetMouseClick
         if (Taps >= MaxTaps)
         {
             LogicaVer4.Tap_Del_Jugador = 1;
-            return true;
         }
-        else
-        {
-            return false;
-        }
+        return true;
     }
 }
