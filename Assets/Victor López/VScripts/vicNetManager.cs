@@ -1,10 +1,11 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
 public class vicNetManager : NetworkManager {
-	bool once = false;
+	//public List<OnlinePlayersLogics> OnlineStats = new List<OnlinePlayersLogics>();
 
 	public void StartHosting(){
 		SetPort();
@@ -28,20 +29,17 @@ public class vicNetManager : NetworkManager {
 	}
 
 	void OnLevelWasLoaded(int level){
-		if(level == 2){
-			//SetUpMenuSceneButtons();
-			once = false;
-		}else if(level == 7){
-			SetUpDisconectButton();
-			OffUtilities.OnlineOn = false;
+		if(level == 6){
+			SetUpOnlineMenuButtons();
 		}
+
+		if(level == 16 || level == 6){
+			Debug.Log("Conected");
+		}else{NetworkManager.singleton.StopHost();}
 	}
 
 	public void SetUpOnlineMenuButtons(){
-		GameObject.Find("btn_CreateGame").GetComponent<Button>().onClick.RemoveAllListeners();
 		GameObject.Find("btn_CreateGame").GetComponent<Button>().onClick.AddListener(StartHosting);
-
-		GameObject.Find("btn_JoinGame").GetComponent<Button>().onClick.RemoveAllListeners();
 		GameObject.Find("btn_JoinGame").GetComponent<Button>().onClick.AddListener(JoinGame);
 	}
 
@@ -50,10 +48,4 @@ public class vicNetManager : NetworkManager {
 		GameObject.Find("btn_disconect").GetComponent<Button>().onClick.AddListener(NetworkManager.singleton.StopHost);
 	}
 
-	void Update(){
-		if(OffUtilities.OnlineOn == true && once == false){
-			SetUpOnlineMenuButtons();
-			once = true;
-		}
-	}
 }

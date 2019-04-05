@@ -8,6 +8,9 @@ public class MouseClick
     {
         if (_click == true)
         {
+            OnlinePlayersLogics.Tap_Del_Jugador += 1;
+            OnlinePlayersLogics.Tiempo_De_Espera_Despues_Del_Tap = .5f;
+            
             LogicaVer4.Tap_Del_Jugador += 1;
             LogicaVer4.Tiempo_De_Espera_Despues_Del_Tap = .5f;
             ResetiarClicks.TapDelJugador(LogicaJ1.Tap_Del_Jugador_1, 7);

@@ -7,19 +7,12 @@ public class Interface_Behaviours : MonoBehaviour {
 
     public GameObject[] Main_btns, Dificult_btns, Multiplayer_btns, OnlineM_btns, Winner_Interface;
 	public GameObject Back_btn;
-	public static bool _MainB = true, _Difi_SingPB = false, _Difi_MultPLB = false, _MultB = false, _OnliB = false, winUP = false;
+	public static bool _MainB = true, _Difi_SingPB = false, _Difi_MultPLB = false, _MultB = false, _OnliB = false;
 
 	void Start(){
 		MainButtonsOn();
 		for(int i = 0; i < Winner_Interface.Length; i++){
 			Winner_Interface[i].SetActive(false);
-		}
-	}
-
-	void Update(){
-		if(OnlinePlayersLogics.winUP == true){
-			ShowWinner();
-			winUP = false;
 		}
 	}
 	//Cierra la escena actual y va a la escena especificada en el string.
