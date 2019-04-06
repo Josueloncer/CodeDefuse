@@ -23,6 +23,8 @@ public class LogicaVer4 : MonoBehaviour
     [Header("Textos")]
     public Text TxtTiempo;
     public Text TxtTaps;
+    public GameObject IMG_Ganar;
+    public GameObject IMG_Perder;
     [Header("Numeros Generados")]
     public List<int> ListaNumeros = new List<int>();
     #endregion
@@ -40,6 +42,7 @@ public class LogicaVer4 : MonoBehaviour
     private Tiempo tiempoEngine = new Tiempo();
     private RevisarEscena revisarEngine = new RevisarEscena();
     private MouseClick ClicksDeMouse = new MouseClick();
+    private DeltaTime _deltaTime = new DeltaTime();
     #endregion
 
     private void Awake()
@@ -59,7 +62,7 @@ public class LogicaVer4 : MonoBehaviour
 
         if (Tiempo_De_Espera_Despues_Del_Tap >= 0 && DeltaTime > 0)
         {
-            Tiempo_De_Espera_Despues_Del_Tap -= Time.deltaTime * 1;
+            Tiempo_De_Espera_Despues_Del_Tap = _deltaTime.restarTiempo(Tiempo_De_Espera_Despues_Del_Tap, Time.deltaTime);
             if (Tiempo_De_Espera_Despues_Del_Tap <= 0)
             {
                 Tap_Final = Tap_Del_Jugador;
@@ -72,17 +75,17 @@ public class LogicaVer4 : MonoBehaviour
         if (Jugando == true && DeltaTime > 0)
         {
             MouseClik();
-            DeltaTime -= Time.deltaTime * 1;
+            DeltaTime = _deltaTime.restarTiempo(DeltaTime, Time.deltaTime);
             tiempoEngine.TiempoJuego(DeltaTime);
 
             if (victoriaEngin.condiciondevictoria(Numero_De_Focos_Prendidos, RevisarEscena.FocosParaNivel) == true)
             {
-                SceneManager.LoadScene("00Main_Menu");
+                IMG_Ganar.SetActive(true);
             }
 
             if (derrotaEngine.RevisarTiempo(DeltaTime) == true)
             {
-                SceneManager.LoadScene("00Main_Menu");
+                IMG_Perder.SetActive(true);
             }
             TxtTiempo.text = DeltaTime.ToString("F0");
         }

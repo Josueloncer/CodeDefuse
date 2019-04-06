@@ -10,9 +10,13 @@ public class CambiarEscena : MonoBehaviour {
         SceneManager.LoadScene(Escena);
     }
 
+    public void Reiniciar()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
     public void Salir()
     {
         Application.Quit();
     }
-
 }

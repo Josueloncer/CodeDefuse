@@ -45,6 +45,7 @@ public class LogicaJ1 : MonoBehaviour
     private RevisarEscena revisarEngine = new RevisarEscena();
     private QuienGano quienganoengine = new QuienGano();
     private MouseClickJ1 ClicksDeMouseJ1 = new MouseClickJ1();
+    private DeltaTime _deltaTime = new DeltaTime();
     #endregion
 
     private void Awake()
@@ -74,12 +75,12 @@ public class LogicaJ1 : MonoBehaviour
         if (DeltaTime < 0)
         {
             TxtEmpate.SetActive(true);
-            TimeNexScene -= Time.deltaTime * 1;
+            TimeNexScene = _deltaTime.restarTiempo(TimeNexScene, Time.deltaTime);
         }
 
         if (Tiempo_De_Espera_Despues_Del_Tap_1 >= 0 && DeltaTime > 0)
             {
-                Tiempo_De_Espera_Despues_Del_Tap_1 -= Time.deltaTime * 1;
+                Tiempo_De_Espera_Despues_Del_Tap_1 = _deltaTime.restarTiempo(Tiempo_De_Espera_Despues_Del_Tap_1, Time.deltaTime);
                 if (Tiempo_De_Espera_Despues_Del_Tap_1 <= 0)
                 {
                     Tap_Final = Tap_Del_Jugador_1;
@@ -90,7 +91,7 @@ public class LogicaJ1 : MonoBehaviour
             }
         if (Jugando == true && DeltaTime > 0)
         {
-            DeltaTime -= Time.deltaTime * 1;
+            DeltaTime = _deltaTime.restarTiempo(DeltaTime, Time.deltaTime);
             MouseClik();
             tiempo.TiempoJuego(DeltaTime);
             victoriaEngin.condiciondevictoria(Numero_De_Focos_Prendidos, RevisarEscena.FocosParaNivel);
