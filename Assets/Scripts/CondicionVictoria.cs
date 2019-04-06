@@ -7,7 +7,7 @@ public class CondicionVictoria{
     {
         if (FocosPrendidos == FocosParaGanar)
         {
-            LogicaVer4.Jugando = false;//////////////////////////////////////// CAMBIAR
+            LogicaVer4.Jugando = false;
             return true;
         }
 

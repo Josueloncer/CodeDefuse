@@ -6,32 +6,26 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: "Assets/Victor L\xF3pez/VScenes/00Video_Intro.unity"
-    guid: b8267516afcf72341b17b475de229773
+    path: Assets/Scenes/00Main_Menu.unity
+    guid: 11b16c2c716e3664198a0e5202f3b32d
   - enabled: 1
-    path: "Assets/Victor L\xF3pez/VScenes/01TapToContinue.unity"
-    guid: 5977b54fc38cfa945a7cfa546b1496f0
+    path: Assets/Scenes/01Menu_SinglePlayer.unity
+    guid: 77d1d8a0c8177344e9f7e4a3b11d3857
   - enabled: 1
-    path: "Assets/Victor L\xF3pez/VScenes/02Menu.unity"
-    guid: 060be4abd4002c7418c5a41b79122925
+    path: Assets/Scenes/02Menu_Multiplayer.unity
+    guid: 0fe159090990d4d4f96da1ef2a37fb91
   - enabled: 1
-    path: "Assets/Victor L\xF3pez/VScenes/03Gameplay.unity"
-    guid: b653e8a50cb47dd4ea3aaabc844439bf
+    path: Assets/Scenes/03Creditos.unity
+    guid: 28d388ab3098c124abd685623cc0dbfe
   - enabled: 1
-    path: "Assets/Victor L\xF3pez/VScenes/05Credits.unity"
-    guid: 1fc9d1975c1a07d48b7b7b0e07afa449
+    path: Assets/Scenes/04Ayuda.unity
+    guid: 80ef7257580440b4c99619457d51d1d4
   - enabled: 1
-    path: "Assets/Victor L\xF3pez/VScenes/06HELP.unity"
-    guid: 79be4101c7ec60a4d965b2579d080757
+    path: Assets/Scenes/05Menu_MultiPlayerLocal.unity
+    guid: 98178844e4b208346a6b92eb075be34f
   - enabled: 1
-    path: "Assets/Victor L\xF3pez/VScenes/ONLINEPRUEBA/10MenuOnlineExample.unity"
-    guid: bcc5eb63db5ea0f48b1370c59a5289e3
-  - enabled: 1
-    path: "Assets/Victor L\xF3pez/VScenes/ONLINEPRUEBA/11OnlineGame.unity"
-    guid: 88fb9d0c0c37c8942ac9728b16e945df
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+    path: Assets/Scenes/06Menu_MultiPlayerOnline.unity
+    guid: 6815826f171e615448c1133af31fa623
   - enabled: 1
     path: Assets/Scenes/Easy.unity
     guid: 801aedc8c8285554687e141d265879d4
@@ -56,28 +50,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MLExtremo.unity
     guid: a96093c116f48c54899b7a7be4ddf5c8
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   m_configObjects: {}

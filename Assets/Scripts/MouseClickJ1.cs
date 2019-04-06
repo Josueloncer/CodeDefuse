@@ -10,7 +10,7 @@ public class MouseClickJ1
         {
             LogicaJ1.Tap_Del_Jugador_1 += 1;
             LogicaJ1.Tiempo_De_Espera_Despues_Del_Tap_1 = .5f;
-            ResetiarClicks.TapDelJugador(LogicaJ1.Tap_Del_Jugador_1, 7);
+            ResetiarClicks.TapDelJugador(LogicaJ1.Tap_Del_Jugador_1, 6);
             return true;
         }
         else

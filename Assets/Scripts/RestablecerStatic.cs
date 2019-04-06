@@ -1,13 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
-public class RestablecerStatic{
-    
-	void Start ()
+public class RestablecerStatic : MonoBehaviour
+{
+    void Awake()
     {
         LogicaVer4.Numero_De_Focos_Prendidos = 0;
         LogicaVer4.Jugando = true;
-        LogicaVer4.Gano = false;
         LogicaVer4.Tiempo_De_Espera_Despues_Del_Tap = 1f;
         LogicaVer4.Tap_Del_Jugador = 0;
 

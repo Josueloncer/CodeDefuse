@@ -6,25 +6,28 @@ using UnityEngine.UI;
 
 public class LogicaVer4 : MonoBehaviour
 {
+    #region Statics Lista de las variables Estaticas
     public static int Numero_De_Focos_Prendidos;
     public static bool Jugando = true;
-
     public static float Tiempo_De_Espera_Despues_Del_Tap = 1f;
     public static int Tap_Del_Jugador = 0;
+    #endregion
+
+    #region Public Lista de las variables Publicas
     public int Tap_Final;
-    public float DeltaTime;
+    public float DeltaTime;//el tiempo de juego
     public int valorMin = 1;
-    public int valorMax = 6;
-
-    public static bool Gano;
-
+    public int valorMax = 5;
+    [Header("Leds para el juego")]
     public GameObject[] Leds;
-
     [Header("Textos")]
     public Text TxtTiempo;
     public Text TxtTaps;
-
+    [Header("Numeros Generados")]
     public List<int> ListaNumeros = new List<int>();
+    #endregion
+
+    #region Clases Declaracion de Clases que se van a usar
     private Revision revision = new Revision();
     private Tiempo tiempo = new Tiempo();
     private RevisarEscena revisar = new RevisarEscena();
@@ -37,6 +40,7 @@ public class LogicaVer4 : MonoBehaviour
     private Tiempo tiempoEngine = new Tiempo();
     private RevisarEscena revisarEngine = new RevisarEscena();
     private MouseClick ClicksDeMouse = new MouseClick();
+    #endregion
 
     private void Awake()
     {
@@ -48,11 +52,11 @@ public class LogicaVer4 : MonoBehaviour
     void Start()
     {
         ListaNumeros = engine.CreateRandomList(valorMin, valorMax, RevisarEscena.FocosParaNivel); 
-        ListaNumeros = engine.CreateRandomList(valorMin, valorMax, RevisarEscena.FocosParaNivel); 
     }
 
     void Update()
     {
+
         if (Tiempo_De_Espera_Despues_Del_Tap >= 0 && DeltaTime > 0)
         {
             Tiempo_De_Espera_Despues_Del_Tap -= Time.deltaTime * 1;
@@ -73,12 +77,12 @@ public class LogicaVer4 : MonoBehaviour
 
             if (victoriaEngin.condiciondevictoria(Numero_De_Focos_Prendidos, RevisarEscena.FocosParaNivel) == true)
             {
-                SceneManager.LoadScene("02Menu");
+                SceneManager.LoadScene("00Main_Menu");
             }
 
             if (derrotaEngine.RevisarTiempo(DeltaTime) == true)
             {
-                SceneManager.LoadScene("02Menu");
+                SceneManager.LoadScene("00Main_Menu");
             }
             TxtTiempo.text = DeltaTime.ToString("F0");
         }

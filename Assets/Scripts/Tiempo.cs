@@ -9,7 +9,6 @@ public class Tiempo {
         if (_tiempoRestante > 0)        //LO QUE SUCEDE MIENTRAS AUN HAY TIEMPO
         {
             _tiempoRestante -= _tiempoRestante;
-
         }
         return _tiempoRestante;
     }
