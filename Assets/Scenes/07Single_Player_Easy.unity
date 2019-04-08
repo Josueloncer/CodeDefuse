@@ -2285,7 +2285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Tap_Final: 0
-  DeltaTime: 60
+  DeltaTime: 20
   valorMin: 1
   valorMax: 6
   Leds:

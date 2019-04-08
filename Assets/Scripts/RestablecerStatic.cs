@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RestablecerStatic : MonoBehaviour
+public class RestablecerStatic: MonoBehaviour
 {
-    void Awake()
+    public void Awake()
     {
         LogicaVer4.Numero_De_Focos_Prendidos = 0;
         LogicaVer4.Jugando = true;

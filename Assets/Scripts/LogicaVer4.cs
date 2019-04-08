@@ -81,11 +81,13 @@ public class LogicaVer4 : MonoBehaviour
             if (victoriaEngin.condiciondevictoria(Numero_De_Focos_Prendidos, RevisarEscena.FocosParaNivel) == true)
             {
                 IMG_Ganar.SetActive(true);
+                Jugando = false;
             }
 
             if (derrotaEngine.RevisarTiempo(DeltaTime) == true)
             {
                 IMG_Perder.SetActive(true);
+                Jugando = false;
             }
             TxtTiempo.text = DeltaTime.ToString("F0");
         }
