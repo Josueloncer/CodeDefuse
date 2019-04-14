@@ -6,19 +6,6 @@ using System.Collections;
 public class ResetMouseClicksTest {
 
     [Test]
-    public void ResetClicksTestSimplePasses()
-    {
-        int Taps = 5;
-        int MaxTaps = 7;
-
-        var engine = new ResetMouseClick();
-
-        var result = engine.TapDelJugador(Taps, MaxTaps);
-
-        Assert.IsFalse(result);
-    }
-
-    [Test]
     public void ResetClicksTestSimplePasses2()
     {
         int Taps = 8;

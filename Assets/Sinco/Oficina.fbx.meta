@@ -1,0 +1,221 @@
+fileFormatVersion: 2
+guid: d9994e7eea7a4ad459c02f3e9176ad1c
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Cast Aluminum.lxp (3)
+    100002: Cube.4.2
+    100004: Group Locator
+    100006: Group Locator (2)
+    100008: Mesh
+    100010: Mesh (2)
+    100012: Mesh (4)
+    100014: //RootNode
+    100016: Patas
+    100018: Patas (2)
+    100020: Patas (3)
+    100022: Patas (4)
+    100024: Patas (5)
+    100026: SillaTop
+    100028: SillaTop (2)
+    100030: SillaTop (3)
+    100032: SillaTop (4)
+    100034: SillaTop (5)
+    100036: Stand 1
+    100038: Stand 2
+    100040: Stand 3
+    100042: Stand 4
+    100044: Texture Group
+    100046: Texture Group (2)
+    400000: Cast Aluminum.lxp (3)
+    400002: Cube.4.2
+    400004: Group Locator
+    400006: Group Locator (2)
+    400008: Mesh
+    400010: Mesh (2)
+    400012: Mesh (4)
+    400014: //RootNode
+    400016: Patas
+    400018: Patas (2)
+    400020: Patas (3)
+    400022: Patas (4)
+    400024: Patas (5)
+    400026: SillaTop
+    400028: SillaTop (2)
+    400030: SillaTop (3)
+    400032: SillaTop (4)
+    400034: SillaTop (5)
+    400036: Stand 1
+    400038: Stand 2
+    400040: Stand 3
+    400042: Stand 4
+    400044: Texture Group
+    400046: Texture Group (2)
+    2100000: Piso
+    2100002: Default
+    2100004: Keyboard
+    2100006: Logo
+    2100008: Silver
+    2100010: bomba
+    2100012: Cables
+    2100014: Tarjeta
+    2100016: Compinent
+    2100018: Oro
+    2100020: Pantalla
+    2100022: Ventana
+    2100024: crystal
+    2100026: window
+    2100028: cesto
+    2100030: libr
+    2100032: port
+    2100034: lapi
+    2100036: blk
+    2100038: libreroo
+    2100040: black
+    2100042: tele
+    2100044: lap
+    2100046: base
+    2100048: Black
+    2100050: Green_plastic
+    2100052: Red_plastic
+    2100054: Yellow_Plastic
+    2100056: Screen
+    2100058: Power_Light
+    2100060: Middle
+    2100062: Lights_Off
+    2100064: Screen_Logo
+    2100066: FabricDenim003_3K
+    2100068: WoodQuarteredChiffon001_6K
+    2100070: Mat (1)
+    2100072: Madera
+    2300000: Cube.4.2
+    2300002: Mesh
+    2300004: Mesh (2)
+    2300006: Mesh (4)
+    2300008: Patas
+    2300010: Patas (2)
+    2300012: Patas (3)
+    2300014: Patas (4)
+    2300016: Patas (5)
+    2300018: SillaTop
+    2300020: SillaTop (2)
+    2300022: SillaTop (3)
+    2300024: SillaTop (4)
+    2300026: SillaTop (5)
+    2300028: Stand 1
+    2300030: Stand 2
+    2300032: Stand 3
+    2300034: Stand 4
+    3300000: Cube.4.2
+    3300002: Mesh
+    3300004: Mesh (2)
+    3300006: Mesh (4)
+    3300008: Patas
+    3300010: Patas (2)
+    3300012: Patas (3)
+    3300014: Patas (4)
+    3300016: Patas (5)
+    3300018: SillaTop
+    3300020: SillaTop (2)
+    3300022: SillaTop (3)
+    3300024: SillaTop (4)
+    3300026: SillaTop (5)
+    3300028: Stand 1
+    3300030: Stand 2
+    3300032: Stand 3
+    3300034: Stand 4
+    4300000: Mesh (4)
+    4300002: Mesh
+    4300004: Mesh (2)
+    4300006: SillaTop
+    4300008: Patas (3)
+    4300010: Cube.4.2
+    4300012: Stand 4
+    4300014: Stand 3
+    4300016: Stand 2
+    4300018: Stand 1
+    7400000: Take 001
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

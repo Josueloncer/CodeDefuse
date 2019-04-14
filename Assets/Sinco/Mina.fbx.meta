@@ -1,0 +1,176 @@
+fileFormatVersion: 2
+guid: 695e491ce3502754692756430678252b
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Area Light
+    100002: Area Light (2)
+    100004: Area Light (3)
+    100006: Area Light (4)
+    100008: Burnished Copper.lxp
+    100010: carrito
+    100012: Cast Iron.lxp
+    100014: Directional Light
+    100016: Electroless Nickel Plating-r3a.lxp (3)
+    100018: Laptop
+    100020: Mesh Light
+    100022: Mesh Light (2)
+    100024: //RootNode
+    100026: Texture Group
+    100028: Texture Group (2)
+    400000: Area Light
+    400002: Area Light (2)
+    400004: Area Light (3)
+    400006: Area Light (4)
+    400008: Burnished Copper.lxp
+    400010: carrito
+    400012: Cast Iron.lxp
+    400014: Directional Light
+    400016: Electroless Nickel Plating-r3a.lxp (3)
+    400018: Laptop
+    400020: Mesh Light
+    400022: Mesh Light (2)
+    400024: //RootNode
+    400026: Texture Group
+    400028: Texture Group (2)
+    2100000: carrito
+    2100002: coal
+    2100004: pillar
+    2100006: Rocas
+    2100008: Rocas Piso
+    2100010: wood
+    2100012: Lampara Vidrio
+    2100014: StingrayPBS2SG
+    2100016: Lampara
+    2100018: StingrayPBS1SG
+    2100020: Default
+    2100022: Linterna
+    2100024: Caja
+    2100026: Caja2
+    2100028: Madera
+    2100030: Metal
+    2100032: Cinta
+    2100034: Interior
+    2100036: Bomba
+    2100038: Dinamita
+    2100040: Tarjeta
+    2100042: Componente
+    2100044: Componentes ORO
+    2100046: Cables
+    2100048: Contador
+    2100050: Cable
+    2100052: battery_Light
+    2100054: Silver
+    2100056: base
+    2100058: Black
+    2100060: Keyboard
+    2100062: Green_plastic
+    2100064: Red_plastic
+    2100066: Yellow_Plastic
+    2100068: Lights_Off
+    2100070: Cable_Strip
+    2100072: Screen
+    2100074: Power_Light
+    2100076: Middle
+    2100078: CD_Sticker
+    2100080: CD_Plastic
+    2100082: CD_Silver
+    2100084: Logo
+    2100086: Screen_Logo
+    2100088: box
+    2300000: carrito
+    2300002: Laptop
+    3300000: carrito
+    3300002: Laptop
+    4300000: carrito
+    4300002: Laptop
+    7400000: Take 001
+    9500000: //RootNode
+    10800000: Area Light
+    10800002: Area Light (2)
+    10800004: Area Light (3)
+    10800006: Area Light (4)
+    10800008: Directional Light
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

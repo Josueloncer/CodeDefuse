@@ -36,6 +36,20 @@ public class RevisarEscena
             case 15:
                 FocosParaNivel = 10;
                 break;
+
+
+            case 17:
+                FocosParaNivel = 4;
+                break;
+            case 18:
+                FocosParaNivel = 6;
+                break;
+            case 19:
+                FocosParaNivel = 8;
+                break;
+            case 20:
+                FocosParaNivel = 10;
+                break;
         }
 
         return FocosParaNivel;
