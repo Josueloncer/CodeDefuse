@@ -58,7 +58,6 @@ public class Revision
                             case 7:
                                 Foco_8 = true;
                                 LogicaVer4.Numero_De_Focos_Prendidos++;
-                    return true;
                     break;
 
                             case 8:

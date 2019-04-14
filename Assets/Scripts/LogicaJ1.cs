@@ -21,7 +21,6 @@ public class LogicaJ1 : MonoBehaviour
     public float DeltaTime;//el tiempo de juego
     public int valorMin = 1;
     public int valorMax = 6;
-    public float TimeNexScene = 3;
     public GameObject TxtGanarJ1;
     public GameObject TxtEmpate;
     public static int J1Gano = 0;
@@ -30,6 +29,7 @@ public class LogicaJ1 : MonoBehaviour
     [Header("Textos")]
     public Text TxtTiempo;
     public Text TxtTaps;
+    float TiempoParaProxEscena = 3f;
     [Header("Numeros Generados")]
     public List<int> ListaNumeros = new List<int>();
     #endregion
@@ -66,16 +66,6 @@ public class LogicaJ1 : MonoBehaviour
         if (quienganoengine.Gano(J1Gano) == 1)
         {
             TxtGanarJ1.SetActive(true);
-            TimeNexScene -= Time.deltaTime * 1;
-        }
-        if (TimeNexScene <= 0)
-        {
-            SceneManager.LoadScene("00Main_Menu");
-        }
-        if (DeltaTime < 0)
-        {
-            TxtEmpate.SetActive(true);
-            TimeNexScene = _deltaTime.restarTiempo(TimeNexScene, Time.deltaTime);
         }
 
         if (Tiempo_De_Espera_Despues_Del_Tap_1 >= 0 && DeltaTime > 0)
@@ -91,6 +81,7 @@ public class LogicaJ1 : MonoBehaviour
             }
         if (Jugando == true && DeltaTime > 0)
         {
+            TeclaESC();
             DeltaTime = _deltaTime.restarTiempo(DeltaTime, Time.deltaTime);
             MouseClik();
             tiempo.TiempoJuego(DeltaTime);
@@ -98,6 +89,19 @@ public class LogicaJ1 : MonoBehaviour
             derrotaEngine.RevisarTiempo(DeltaTime);
             TxtTiempo.text = DeltaTime.ToString("F0");
         }
+
+        if (derrotaEngine.RevisarTiempo(DeltaTime) == true)
+        {
+            TxtEmpate.SetActive(true);
+            TiempoParaProxEscena -= Time.deltaTime;
+            Jugando = false;
+            if (TiempoParaProxEscena <= 0)
+            {
+                SceneManager.LoadScene("00Main_Menu");
+            }
+        }
+        TxtTiempo.text = DeltaTime.ToString("F0");
+
         TxtTaps.text = Tap_Del_Jugador_1.ToString();
     }
 
@@ -106,6 +110,14 @@ public class LogicaJ1 : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Z))
         {
             ClicksDeMouseJ1.RevisarClicks(true);
+        }
+    }
+
+    void TeclaESC()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("00Main_Menu");
         }
     }
 

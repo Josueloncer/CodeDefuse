@@ -21,7 +21,6 @@ public class LogicaJ2 : MonoBehaviour
     public float DeltaTime;//el tiempo de juego
     public int valorMin = 1;
     public int valorMax = 6;
-    public float TimeNexScene = 3;
     public GameObject TxtGanarJ2;
     public static int J2Gano = 0;
     [Header("Leds para el juego")]
@@ -64,12 +63,6 @@ public class LogicaJ2 : MonoBehaviour
         if (quienganoengine.Gano(J2Gano) == 2)
         {
             TxtGanarJ2.SetActive(true);
-            TimeNexScene = _deltaTime.restarTiempo(TimeNexScene, Time.deltaTime);
-        }
-
-        if (TimeNexScene <= 0)
-        {
-            SceneManager.LoadScene("00Main_Menu");
         }
 
         if (Tiempo_De_Espera_Despues_Del_Tap_2 >= 0 && DeltaTime > 0)

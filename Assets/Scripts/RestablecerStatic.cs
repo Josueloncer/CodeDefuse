@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RestablecerStatic: MonoBehaviour
+public class RestablecerStatic : MonoBehaviour
 {
-    public void Awake()
+    void Awake()
     {
         LogicaVer4.Numero_De_Focos_Prendidos = 0;
         LogicaVer4.Jugando = true;
@@ -24,5 +24,12 @@ public class RestablecerStatic: MonoBehaviour
         LogicaJ2.Tiempo_De_Espera_Despues_Del_Tap_2 = 1f;
         LogicaJ2.Tap_Del_Jugador_2 = 0;
         LogicaJ2.J2Gano = 0;
+
+
+        LogicaOnline.Numero_De_Focos_Prendidos = 0;
+        LogicaOnline.Jugando = true;
+        LogicaOnline.Tiempo_De_Espera_Despues_Del_Tap = 1f;
+        LogicaOnline.Tap_Del_Jugador = 0;
+
     }
 }

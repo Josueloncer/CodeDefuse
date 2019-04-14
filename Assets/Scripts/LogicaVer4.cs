@@ -54,7 +54,7 @@ public class LogicaVer4 : MonoBehaviour
 
     void Start()
     {
-        ListaNumeros = engine.CreateRandomList(valorMin, valorMax, RevisarEscena.FocosParaNivel); 
+        ListaNumeros = engine.CreateRandomList(valorMin, valorMax, RevisarEscena.FocosParaNivel);
     }
 
     void Update()
@@ -74,6 +74,7 @@ public class LogicaVer4 : MonoBehaviour
 
         if (Jugando == true && DeltaTime > 0)
         {
+            TeclaESC();
             MouseClik();
             DeltaTime = _deltaTime.restarTiempo(DeltaTime, Time.deltaTime);
             tiempoEngine.TiempoJuego(DeltaTime);
@@ -100,6 +101,14 @@ public class LogicaVer4 : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             ClicksDeMouse.RevisarClicks(true);
+        }
+    }
+
+    void TeclaESC()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("00Main_Menu");
         }
     }
 
